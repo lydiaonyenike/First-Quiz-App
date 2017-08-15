@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.example.onyenikelydia.quizapp.WelcomePageActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Quirky Quiz on the English Language."
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/welcomeNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:paddingTop="8dp"
+        android:text="Do you consider yourself an expert in the English Language? wondering how much you still need to learn? Take a few minutes to test your knowledge of English  (Richard Nordguist, April 03, 2017)."
+        android:textSize="18sp"/>
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:src="@drawable/picture"
+        android:layout_below="@id/welcomeNote"
+        android:paddingTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/picture">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name:"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:ems="20"
+                android:background="@android:drawable/editbox_background"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:         "
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:ems="20"
+                android:background="@android:drawable/editbox_background"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="NEXT"
+        android:textColor="@android:color/background_light"
+        android:backgroundTint="@color/colorPrimary"/>
+</RelativeLayout>

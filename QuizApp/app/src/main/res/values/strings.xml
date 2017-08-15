@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="title_activity_quiz">Quiz</string>
+    <string name="large_text">
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>

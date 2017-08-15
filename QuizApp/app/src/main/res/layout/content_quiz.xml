@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.onyenikelydia.quizapp.QuizActivity"
+    tools:showIn="@layout/activity_quiz"
+    android:fillViewport="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <ListView
+       android:id="@+id/listView"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true"
+       android:padding="10dp"
+       android:layout_above="@+id/nextButton"></ListView>
+
+   <Button
+       android:id="@+id/nextButton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Submit"
+       android:textSize="18sp"
+       android:textColor="@android:color/background_light"
+       android:background="@color/colorPrimary"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentBottom="true"
+       android:layout_toRightOf="@+id/textView3" />
+   <Button
+       android:id="@+id/backButton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Back"
+       android:textSize="18sp"
+       android:textColor="@android:color/background_light"
+       android:background="@color/colorPrimary"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentBottom="true"/>
+   <TextView
+       android:id="@+id/textViewScores"
+       android:paddingLeft="20dp"
+       android:layout_height="35dp"
+       android:textSize="24sp"
+       android:textAlignment="center"
+       android:text="0"
+       android:layout_alignParentBottom="true"
+       android:layout_toRightOf="@+id/backButton"
+       android:layout_marginLeft="20dp"
+       android:layout_width="170dp" />
+</RelativeLayout>
+
+
+
+</ScrollView>
